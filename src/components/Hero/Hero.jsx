@@ -110,7 +110,7 @@ function Hero() {
 
               <motion.a
                 whileHover={linkHover}
-                href="https://your-live-site.com"
+                href="https://tripeasy-fullstack.onrender.com"
                 target="_blank"
                 rel="noreferrer"
                 className={styles.primaryLink}
