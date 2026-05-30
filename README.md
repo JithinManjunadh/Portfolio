@@ -1,0 +1,2 @@
+# Portfolio
+Full-stack developer portfolio built with React, showcasing projects, skills, and experience.
