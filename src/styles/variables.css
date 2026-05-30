@@ -1,0 +1,16 @@
+:root{
+  --bg:#0f0f10;
+  --surface:#171718;
+  --surface2:#1f1f21;
+  --text:#f5f1e8;
+  --muted:#9f9787;
+  --gold:#c7a86b;
+  --line:rgba(255,255,255,0.08);
+  --green:#6dd3a0;
+
+  --serif:'Fraunces', serif;
+  --sans:'Inter', sans-serif;
+  --mono:'JetBrains Mono', monospace;
+
+  --container:1200px;
+}

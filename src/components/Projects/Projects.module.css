@@ -1,0 +1,146 @@
+/* src/components/Projects/Projects.module.css */
+.section {
+  padding: 0 32px 110px;
+}
+
+.wrapper {
+  max-width: 1200px;
+  margin: auto;
+  width: 100%;
+}
+
+.head {
+  margin-bottom: 40px;
+}
+
+.tag {
+  font-family: var(--mono);
+  font-size: 11px;
+  letter-spacing: .2em;
+  color: var(--gold);
+  margin-bottom: 10px;
+}
+
+.title {
+  font-family: var(--serif);
+  font-size: 46px;
+  letter-spacing: -0.03em;
+  color: var(--text);
+}
+.grid {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 24px;
+}
+
+.project {
+  background: var(--surface);
+  border: 1px solid var(--line);
+  border-radius: 28px;
+  padding: 34px;
+  position: relative;
+  overflow: hidden;
+}
+
+.project::before {
+  content: '';
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 4px;
+  height: 100%;
+  background: var(--gold);
+  transform: scaleY(0);
+  transform-origin: bottom;
+  transition: .3s;
+}
+
+.project:hover::before {
+  transform: scaleY(1);
+}
+
+.projectNo {
+  font-family: var(--mono);
+  font-size: 11px;
+  color: var(--muted);
+  letter-spacing: .15em;
+  margin-bottom: 16px;
+}
+
+.projectTitle {
+  font-family: var(--serif);
+  font-size: 34px;
+  margin-bottom: 14px;
+}
+
+.projectTitle span {
+  color: var(--gold);
+}
+
+.projectText {
+  color: var(--muted);
+  line-height: 1.9;
+}
+
+.tags {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 10px;
+  margin-top: 22px;
+}
+
+.tag {
+  font-size: 11px;
+  padding: 7px 12px;
+  border-radius: 999px;
+  background: rgba(255, 255, 255, .04);
+  border: 1px solid var(--line);
+  color: var(--gold);
+  font-family: var(--mono);
+}
+.tagtext{
+  font-family:var(--mono);
+  color:var(--gold);
+  font-size:11px;
+  letter-spacing:.2em;
+  margin-bottom:10px;
+}
+.actions {
+  display: flex;
+  gap: 12px;
+  margin-top: 28px;
+}
+
+.button {
+  padding: 12px 18px;
+  border-radius: 12px;
+  text-decoration: none;
+  font-size: 13px;
+  font-weight: 500;
+}
+
+.primary {
+  background: var(--gold);
+  color: #111;
+}
+
+.secondary {
+  border: 1px solid var(--line);
+  color: var(--text);
+}
+
+@media(max-width:850px) {
+  .grid {
+    grid-template-columns: 1fr;
+  }
+}
+
+@media(max-width:768px) {
+  .project {
+    padding: 28px;
+  }
+
+  .projectTitle {
+    font-size: 30px;
+  }
+}

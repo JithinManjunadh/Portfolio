@@ -1,0 +1,25 @@
+.head{
+  margin-bottom:40px;
+}
+
+.tag{
+  font-family:var(--mono);
+  font-size:11px;
+  letter-spacing:.2em;
+  color:var(--gold);
+  margin-bottom:10px;
+}
+
+.title{
+  font-family:var(--serif);
+  font-size:46px;
+  letter-spacing:-0.03em;
+  line-height:1.05;
+}
+
+@media(max-width:768px){
+
+  .title{
+    font-size:38px;
+  }
+}

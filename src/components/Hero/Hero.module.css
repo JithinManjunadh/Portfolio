@@ -1,0 +1,358 @@
+.hero{
+  min-height:100vh;
+  display:flex;
+  align-items:center;
+  padding:140px 32px 80px;
+}
+
+.wrap{
+  max-width:1200px;
+  margin:auto;
+
+  width:100%;
+
+  display:grid;
+  grid-template-columns:1.1fr .9fr;
+
+  gap:60px;
+  align-items:center;
+}
+
+
+.eyebrow{
+  display:inline-flex;
+  align-items:center;
+  gap:10px;
+
+  padding:8px 16px;
+
+  border-radius:999px;
+
+  background:rgba(255,255,255,.04);
+  border:1px solid var(--line);
+
+  color:var(--muted);
+  font-size:13px;
+
+  margin-bottom:28px;
+}
+
+.dot{
+  width:8px;
+  height:8px;
+
+  border-radius:50%;
+
+  background:var(--green);
+
+  box-shadow:0 0 10px var(--green);
+}
+
+.hero h1{
+  font-family:var(--serif);
+
+  font-size:clamp(52px,9vw,96px);
+
+  line-height:.95;
+
+  margin-bottom:28px;
+
+  letter-spacing:-0.04em;
+}
+
+.hero h1 em{
+  color:var(--gold);
+  font-style:italic;
+  font-weight:600;
+}
+
+.text{
+  font-size:18px;
+  line-height:1.9;
+
+  color:var(--muted);
+
+  max-width:640px;
+}
+
+.text strong{
+  color:var(--text);
+  font-weight:600;
+}
+
+.cta{
+  display:flex;
+  gap:16px;
+
+  margin-top:38px;
+
+  flex-wrap:wrap;
+}
+
+.mainBtn{
+  background:var(--gold);
+  color:#111;
+
+  border:none;
+
+  padding:16px 28px;
+
+  border-radius:14px;
+
+  font-size:15px;
+  font-weight:600;
+
+  cursor:pointer;
+}
+
+.ghostBtn{
+  background:transparent;
+
+  border:1px solid var(--line);
+
+  color:var(--text);
+
+  padding:16px 28px;
+
+  border-radius:14px;
+
+  font-size:15px;
+
+  cursor:pointer;
+}
+
+
+.card{
+  position:relative;
+
+  background:
+  linear-gradient(
+    180deg,
+    var(--surface),
+    var(--surface2)
+  );
+
+  border:1px solid var(--line);
+
+  border-radius:30px;
+
+  padding:36px;
+
+  overflow:hidden;
+
+  max-width:470px;
+  width:100%;
+
+  margin-left:auto;
+}
+
+.card::before{
+  content:'';
+
+  position:absolute;
+  inset:0;
+
+  background:
+  radial-gradient(
+    circle at top right,
+    rgba(199,168,107,.12),
+    transparent 45%
+  );
+
+  pointer-events:none;
+}
+
+.cardTop{
+  display:flex;
+  justify-content:space-between;
+  align-items:center;
+
+  margin-bottom:34px;
+}
+
+.cardTag{
+  font-family:var(--mono);
+  font-size:11px;
+
+  letter-spacing:.18em;
+
+  color:var(--gold);
+}
+
+.cardStatus{
+  color:var(--green);
+
+  font-family:var(--mono);
+  font-size:12px;
+}
+
+.projectNo{
+  font-family:var(--mono);
+  font-size:11px;
+
+  color:var(--muted);
+
+  letter-spacing:.18em;
+
+  margin-bottom:18px;
+}
+
+.projectTitle{
+  font-family:var(--serif);
+
+  font-size:48px;
+  line-height:1;
+
+  margin-bottom:20px;
+
+  letter-spacing:-0.04em;
+}
+
+.projectTitle span{
+  color:var(--gold);
+}
+
+.projectText{
+  color:var(--muted);
+
+  line-height:1.9;
+
+  margin-bottom:30px;
+}
+
+.stack{
+  display:flex;
+  flex-wrap:wrap;
+
+  gap:10px;
+
+  margin-bottom:34px;
+}
+
+.stackTag{
+  padding:8px 14px;
+
+  border-radius:999px;
+
+  background:rgba(255,255,255,.04);
+  border:1px solid var(--line);
+
+  color:var(--gold);
+
+  font-size:11px;
+
+  font-family:var(--mono);
+}
+
+.cardBottom{
+  padding-top:24px;
+
+  border-top:1px solid rgba(255,255,255,.06);
+}
+
+.links{
+  display:flex;
+  align-items:center;
+  gap:14px;
+
+  flex-wrap:wrap;
+}
+
+.primaryLink{
+  display:inline-flex;
+  align-items:center;
+  gap:8px;
+
+  padding:12px 18px;
+
+  background:var(--gold);
+  color:#111;
+
+  border-radius:12px;
+
+  text-decoration:none;
+
+  font-size:14px;
+  font-weight:600;
+}
+
+.secondaryLink{
+  display:inline-flex;
+  align-items:center;
+
+  padding:12px 18px;
+
+  border-radius:12px;
+
+  border:1px solid var(--line);
+
+  color:var(--text);
+
+  text-decoration:none;
+
+  font-size:14px;
+  font-weight:500;
+}
+
+
+@media(max-width:900px){
+
+  .wrap{
+    grid-template-columns:1fr;
+  }
+
+  .card{
+    max-width:100%;
+    margin-left:0;
+  }
+}
+
+@media(max-width:768px){
+
+  .hero{
+    padding:120px 20px 80px;
+  }
+
+  .text{
+    font-size:17px;
+  }
+
+  .card{
+    padding:30px;
+  }
+
+  .projectTitle{
+    font-size:42px;
+  }
+}
+
+@media(max-width:520px){
+
+  .hero h1{
+    font-size:clamp(46px,16vw,72px);
+  }
+
+  .cta{
+    flex-direction:column;
+    align-items:stretch;
+  }
+
+  .mainBtn,
+  .ghostBtn{
+    width:100%;
+  }
+
+  .projectTitle{
+    font-size:38px;
+  }
+
+  .links{
+    width:100%;
+  }
+
+  .primaryLink,
+  .secondaryLink{
+    flex:1;
+    justify-content:center;
+  }
+}
