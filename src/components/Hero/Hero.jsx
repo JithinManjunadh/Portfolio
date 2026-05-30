@@ -120,7 +120,7 @@ function Hero() {
 
               <motion.a
                 whileHover={linkHover}
-                href="https://github.com/JithinManjunadh/TripHaven-fullstack"
+                href="https://github.com/JithinManjunadh/TripEasy-fullstack"
                 target="_blank"
                 rel="noreferrer"
                 className={styles.secondaryLink}
