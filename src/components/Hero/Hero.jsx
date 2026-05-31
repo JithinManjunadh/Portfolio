@@ -89,7 +89,7 @@ function Hero() {
           </div>
 
           <h2 className={styles.projectTitle}>
-            <span>Trip</span>Haven
+            <span>Trip</span>Easy
           </h2>
 
           <p className={styles.projectText}>
