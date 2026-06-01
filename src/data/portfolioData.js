@@ -42,8 +42,7 @@ export const projects = [
       'Express.js',
       'MongoDB',
       'JWT Auth',
-      'RBAC',
-      'Joi',
+      'RBAC'
     ],
     live: '#',
     github: 'https://github.com/JithinManjunadh/finance_backend',
