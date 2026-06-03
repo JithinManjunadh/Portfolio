@@ -20,9 +20,9 @@ export const stats = [
 export const projects = [
   {
     id: '02',
-    title: 'Lumeo',
-    accent: 'Lu',
-    rest: 'meo',
+    title: 'EasyBasket',
+    accent: 'Easy',
+    rest: 'Basket',
     description:
       'Full-stack e-commerce application with cart functionality, order history, responsive UI and complete backend integration. Built during Edunet internship.',
     tags: ['Node.js', 'Express.js', 'MongoDB', 'REST APIs'],
