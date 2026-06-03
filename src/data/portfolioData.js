@@ -27,7 +27,7 @@ export const projects = [
       'Full-stack e-commerce application with cart functionality, order history, responsive UI and complete backend integration. Built during Edunet internship.',
     tags: ['Node.js', 'Express.js', 'MongoDB', 'REST APIs'],
     live: '#',
-    github: 'https://github.com/JithinManjunadh/Lumeo-E-commerce',
+    github: 'https://github.com/JithinManjunadh/EasyBasket',
   },
 
   {
