@@ -57,7 +57,7 @@ function Hero() {
             </motion.a>
 
             <motion.a
-              whileHover={btnHover} href="/resume/resume.pdf" target="_blank" rel="noreferrer"  
+              whileHover={btnHover} href="/resume/JithinManjunadh_Resume.pdf" target="_blank" rel="noreferrer"  
               className={styles.ghostBtn}
             >
               Download Resume
