@@ -110,7 +110,7 @@ function Hero() {
 
               <motion.a
                 whileHover={linkHover}
-                href="https://tripeasy-fullstack.onrender.com"
+                href="https://rentnow-fullstack-app.onrender.com/"
                 target="_blank"
                 rel="noreferrer"
                 className={styles.primaryLink}
@@ -120,7 +120,7 @@ function Hero() {
 
               <motion.a
                 whileHover={linkHover}
-                href="https://github.com/JithinManjunadh/TripEasy-fullstack"
+                href="https://github.com/JithinManjunadh/RentNow-fullstack"
                 target="_blank"
                 rel="noreferrer"
                 className={styles.secondaryLink}
