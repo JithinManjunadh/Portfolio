@@ -27,7 +27,7 @@ function Footer() {
         >
           <a href="mailto:jithinmanjunadh2003@gmail.com">Email</a>
           <a href="https://github.com/JithinManjunadh" target="_blank" rel="noreferrer">GitHub</a>
-          <a href="https://www.linkedin.com/in/jithin-manjunadh-narra-32631233b/" target="_blank" rel="noreferrer">LinkedIn</a>
+          <a href="https://www.linkedin.com/in/jithin-manjunadh-n-32631233b/" target="_blank" rel="noreferrer">LinkedIn</a>
           <a href="https://leetcode.com/u/JithinManjunadh/" target="_blank" rel="noreferrer">LeetCode</a>
         </motion.div>
 
